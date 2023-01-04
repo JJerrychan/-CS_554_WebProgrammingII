@@ -1,0 +1,58 @@
+@import "variables";
+@import "./src/styles/bootstrap/scss/bootstrap";
+
+body {
+  background-color: $body-background;
+}
+
+nav {
+  background-color: white;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: $mycolor-normal;
+}
+
+.card-text {
+  line-height: $card-line-height;
+  letter-spacing: $card-letter-spacing;
+  color: $mycolor-normal;
+}
+
+.container {
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-family: $title-font;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  color: $mycolor-primary;
+  &:hover {
+    color: $mycolor-deep;
+  }
+}
+
+.card {
+  border-radius: $card-radius;
+}
+
+.card-footer {
+  background-color: white;
+}
+
+.card-button {
+  width: max-content;
+  border-width: 0;
+  background-color: $mycolor-normal;
+  &:active:focus:hover {
+    background-color: $mycolor-deep;
+  }
+}

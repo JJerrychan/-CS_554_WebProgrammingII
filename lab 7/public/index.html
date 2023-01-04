@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/css/styles.min.css" />
+    <title>Lab 7</title>
+  </head>
+
+  <body>
+    <h1 class="title">Heros of Overwatch</h1>
+    <div class="container">
+      <div class="row">
+        <nav class="col-sm-4 col-xs-12 col-md-3">
+          <ul
+            class="nav flex-column justify-content-center align-items-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="#dvaCard">D.Va</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#baptisteCard">Baptiste</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#genjiCard">Genji</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#lucioCard">Lucio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mccreeCard">Mccree</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reaperCard">Reaper</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reinhardtcard">Reinhardt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#soldierCard">Soldier-76</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tracerCard">Tracer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#zaryaCard">Zarya</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="col-sm-8 col-md-9">
+          <div class="row">
+            <div class="card col-lg-4 col-md-6 col-sm-12" id="dvaCard">
+              <img
+                class="card-img-top"
+                src="/public/images/dva-concept.jpg"
+                alt="dva"
+              />
+              <div class="card-body">
+                <h2 class="card-title">D.Va</h2>
+                <p class="card-text">
+                  Once a professional gamer, D.Va now utilizes her nimble
+                  reflexes and quick thinking to pilot a state-of-the-art mech
+                  in defense of her homeland.
+                </p>
+              </div>
+              <div class="card-footer m-auto">
+                <button
+                  type="button"
+                  class="btn btn-primary card-button"
+                  data-toggle="modal"
+                  data-target="#dvaModal"
+                >
+                  More Details
+                </button>
+              </div>
+            </div>
+
+            <div class="card col-lg-4 col-md-6 col-sm-12" id="baptisteCard">
+              <img
+                class="card-img-top"
+                src="/public/images/baptiste-concept.jpg"
+                alt="baptiste"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Baptiste</h2>
+                <p class="card-text">
+                  Baptiste wields an assortment of experimental devices and
+                  weaponry to keep allies alive and eliminate threats under
+                  fierce conditions. A battle-hardened combat medic, he is just
+                  as capable of saving lives as he is of taking out the enemy.
+                </p>
+              </div>
+              <div class="card-footer m-auto">
+                <button
+                  type="button"
+                  class="btn btn-primary card-button"
+                  data-toggle="modal"
+                  data-target="#baptisteModal"
+                >
+                  More Details
+                </button>
+              </div>
+            </div>
+
+            <div class="card col-lg-4 col-md-6 col-sm-12" id="genjiCard">
+              <img
+                class="card-img-top"
+                src="/public/images/genji-concept.jpg"
+                alt="genji"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Genji</h2>
+                <p class="card-text">
+                  The cyborg ninja Genji Shimada has made peace with the
+                  augmented body he once rejected, and in doing so, he has
+                  discovered a higher humanity.
+                </p>
+              </div>
+              <div class="card-footer m-auto">
+                <button
+                  type="button"
+                  class="btn btn-primary card-button"
+                  data-toggle="modal"
+                  data-target="#genjiModal"
+                >
+                  More Details
+                </button>
+              </div>
+            </div>
+
+            <div class="card col-lg-4 col-md-6 col-sm-12" id="lucioCard">
+              <img
+                class="card-img-top"
+                src="/public/images/lucio-concept.jpg"
+                alt="lucio"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Lucio</h2>
+                <p class="card-text">
+                  Lúcio is an international celebrity who inspires social change
+                  through his music and actions. On the battlefield, he utilizes
+                  his cutting-edge Sonic Amplifier and unique songs to assail
+                  enemies, heal allies, and boost his teammates’ speed.
+                </p>
+              </div>
+              <div class="card-footer m-auto">
+                <button
+                  type="button"
+                  class="btn btn-primary card-button"
+                  data-toggle="modal"
+                  data-target="#lucioModal"
+                >
+                  More Details
+                </button>
+              </div>
+            </div>
+
+            <div class="card col-lg-4 col-md-6 col-sm-12" id="mccreeCard">
+              <img
+                class="card-img-top"
+                src="/public/images/mccree-concept.jpg"
+                alt="Mccree"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Cassidy</h2>
+                <p class="card-text">
+                  Armed with his Peacekeeper revolver, Cassidy takes out targets
+                  with deadeye precision and dives out of danger with eagle-like
+                  speed.
+                </p>
+              </div>
+              <div class="card-footer m-auto">
+                <button
+                  type="button"
+                  class="btn btn-primary card-button"
+                  data-toggle="modal"
+                  data-target="#mccreeModal"
+                >
+                  More Details
+                </button>
+              </div>
+            </div>
+
+            <div class="card col-lg-4 col-md-6 col-sm-12" id="reaperCard">
+              <img
+                class="card-img-top"
+                src="/public/images/reaper-concept.jpg"
+                alt="reaper"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Reaper</h2>
+                <p class="card-text">
+                  Reaper is deadly shotgun-wielding assassin with the ability to
+                  move around the battlefield like a ghost. Wherever he appears,
+                  death follows.
+                </p>
+              </div>
+              <div class="card-footer m-auto">
+                <button
+                  type="button"
+                  class="btn btn-primary card-button"
+                  data-toggle="modal"
+                  data-target="#reaperModal"
+                >
+                  More Details
+                </button>
+              </div>
+            </div>
+
+            <div class="card col-lg-4 col-md-6 col-sm-12" id="reinhardtCard">
+              <img
+                class="card-img-top"
+                src="/public/images/reinhardt-concept.jpg"
+                alt="reinhardt"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Reinhardt</h2>
+                <p class="card-text">
+                  Reinhardt is champion who lives by the knightly codes of
+                  valor, justice, and courage. Clad in powered armor and
+                  swinging his hammer, he leads a rocket-propelled charge across
+                  the battleground and defends his comrades with a massive
+                  energy barrier.
+                </p>
+              </div>
+              <div class="card-footer m-auto">
+                <button
+                  type="button"
+                  class="btn btn-primary card-button"
+                  data-toggle="modal"
+                  data-target="#reinhardtModal"
+                >
+                  More Details
+                </button>
+              </div>
+            </div>
+
+            <div class="card col-lg-4 col-md-6 col-sm-12" id="soldierCard">
+              <img
+                class="card-img-top"
+                src="/public/images/soldier-76-concept.jpg"
+                alt="soldier-76"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Soldier-76</h2>
+                <p class="card-text">
+                  Armed with cutting-edge weaponry, including an experimental
+                  pulse rifle that’s capable of firing spirals of high-powered
+                  rockets, Soldier: 76 has the speed and support know-how of a
+                  highly trained warrior.
+                </p>
+              </div>
+              <div class="card-footer m-auto">
+                <button
+                  type="button"
+                  class="btn btn-primary card-button"
+                  data-toggle="modal"
+                  data-target="#soldierModal"
+                >
+                  More Details
+                </button>
+              </div>
+            </div>
+
+            <div class="card col-lg-4 col-md-6 col-sm-12" id="tracerCard">
+              <img
+                class="card-img-top"
+                src="/public/images/tracer-concept.jpg"
+                alt="tracer"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Tracer</h2>
+                <p class="card-text">
+                  The Overwatch agent known as Tracer is a time-jumping
+                  adventurer and an irrepressible force for good. Toting twin
+                  pulse pistols and time bombs, Tracer is able to "blink"
+                  through space and rewind her personal timeline as she battles
+                  to right wrongs the world over.
+                </p>
+              </div>
+              <div class="card-footer m-auto">
+                <button
+                  type="button"
+                  class="btn btn-primary card-button"
+                  data-toggle="modal"
+                  data-target="#tracerModal"
+                >
+                  More Details
+                </button>
+              </div>
+            </div>
+
+            <div class="card col-lg-4 col-md-6 col-sm-12" id="zaryaCard">
+              <img
+                class="card-img-top"
+                src="/public/images/zarya-concept.jpg"
+                alt="zarya"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Zarya</h2>
+                <p class="card-text">
+                  Zarya is one of the world's strongest women, a celebrated
+                  athlete who sacrificed personal glory to face the mechanical
+                  foes threatening her people. Armed with a powerful beam weapon
+                  and an arsenal of protective shields, Zarya excels in
+                  frontline combat.
+                </p>
+              </div>
+              <div class="card-footer m-auto">
+                <button
+                  type="button"
+                  class="btn btn-primary card-button"
+                  data-toggle="modal"
+                  data-target="#zaryaModal"
+                >
+                  More Details
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="modal fade"
+              id="dvaModal"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title">D.Va Story</h2>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Hana Song—better known by her screen name “D.Va”–is the best
+                    of the best. A former professional gamer, D.Va now puts her
+                    skills to use as a mech pilot in defense of South Korea. She
+                    and the other pilots, known as the MEKA Squad, stand between
+                    their country and the invading Gwishin: a mechanical threat
+                    from deep beneath the sea.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal fade"
+              id="baptisteModal"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title">Baptiste Story</h2>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    An elite combat medic, Baptiste was lured into Talon by the
+                    promise of easy riches. Later, disgusted with what he had
+                    done, he deserted Talon to forge a new path for himself. Now
+                    he works toward a better world, healing where he can and
+                    fighting when he must.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal fade"
+              id="genjiModal"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title">Genji Story</h2>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Near death at the hands of his own brother, ninja Genji
+                    Shimada was rescued by Overwatch. To save his life, they
+                    made him a living weapon with cybernetic upgrades.
+                    Struggling with his nature and purpose after Overwatch’s
+                    fall, Genji sought peace through study with the omnic monk
+                    Zenyatta before answering Winston’s call.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal fade"
+              id="lucioModal"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title">Lucio Story</h2>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Lúcio grew up poor in the Rio favelas, before eventually
+                    becoming a popular underground DJ. But when the Vishkar
+                    Corporation redeveloped the city and cracked down on the
+                    community, Lúcio reclaimed his father’s sonic technology
+                    from the corporation and used it to rally his people to
+                    action. Now an international celebrity, he inspires social
+                    change through his music and actions.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal fade"
+              id="mccreeModal"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title">Cassidy Story</h2>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    A founding member of the notorious Deadlock Gang, Cassidy
+                    was eventually coerced into joining Blackwatch, Overwatch’s
+                    covert-ops division. He came to believe he could make amends
+                    for his past by righting the world’s injustices. But when
+                    Overwatch fell, Cassidy went underground, resurfacing later
+                    as a gunslinger for hire, fighting only for causes he
+                    believes are just.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal fade"
+              id="reaperModal"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title">Reaper Story</h2>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Gabriel Reyes was once an esteemed member of Overwatch,
+                    first as its Strike Commander and then as the leader of
+                    Blackwatch, Overwatch’s branch for covert operations. He was
+                    believed dead following an explosion at Overwatch’s
+                    headquarters. But rumors say he escaped his fate, and now
+                    works as the volatile killer known only as Reaper, one of
+                    Talon’s deadliest enforcers
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal fade"
+              id="reinhardtModal"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title">Reinhardt Story</h2>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Reinhardt Wilhelm lives by the knightly codes of valor,
+                    justice, and courage. One of the founders of Overwatch, for
+                    decades he was a force for good the world over. After the
+                    organization’s fall, he travelled Europe like a knight of
+                    old, defending the innocent alongside his squire, Brigitte,
+                    until Winston’s call brought them back into the arms of
+                    Overwatch.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal fade"
+              id="soldierModal"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title">Soldier-76 Story</h2>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    The former commander of Overwatch turned physically-enhanced
+                    vigilante, Jack Morrison travels the world hunting those
+                    responsible for the downfall of Overwatch. It is unknown
+                    whether he seeks justice... or revenge.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal fade"
+              id="tracerModal"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title">Tracer Story</h2>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Tracer is a time-jumping adventurer and an irrepressible
+                    force for good. With a chronal harness that lets her control
+                    her flow of time, she was one of Overwatch’s top agents, and
+                    she continues to try to make the world a better place
+                    wherever – and whenever – she can. Tracer brings her skill
+                    and optimism to help the new Overwatch keep the world safe.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal fade"
+              id="zaryaModal"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title">Zarya Story</h2>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Growing up surrounded by the post-war destruction of the
+                    Omnic Crisis, Zarya became a champion weightlifter and used
+                    her strength and fame to help her nation rebuild. Now, she
+                    has sacrificed personal glory to protect her people on the
+                    front lines of a war against a deadly new mechanical threat.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/public/js/vendor.min.js"></script>
+  </body>
+</html>
